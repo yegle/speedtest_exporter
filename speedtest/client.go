@@ -101,6 +101,6 @@ func (client *Client) NetworkMetrics() map[string]float64 {
 	result["download"] = downloadMbps
 	result["upload"] = uploadMbps
 	result["ping"] = ping
-	log.Infof("Speedtest results: %s", result)
+	log.Infof("Speedtest results: %#v", result)
 	return result
 }
